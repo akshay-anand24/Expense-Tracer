@@ -75,6 +75,7 @@ function convertDataToCsv(data) {
     const csv = parse(records, opts);
     fs.writeFileSync('data.csv', csv);
     console.log('CSV file was written successfully');
+    return csv
   } catch (err) {
     console.error('Error converting data to CSV:', err);
   }
@@ -86,10 +87,10 @@ exports.downloadBalanceSheet = async (req, res) => {
     const expenses = await Expense.find();
 
     // Create CSV or Excel logic here
-    convertDataToCsv(expenses)
+    const csv= convertDataToCsv(expenses)
 
     res.attachment('balance-sheet.csv');
-    res.status(200).send("csvData"); // assuming `csvData` is the generated CSV content
+    res.status(200).send(csv); // assuming `csvData` is the generated CSV content
   } catch (error) {
     res.status(400).json({ error: error.message });
   }
