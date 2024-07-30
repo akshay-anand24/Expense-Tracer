@@ -14,7 +14,7 @@ I have deployed my backend on railway server, now you don't have to setup github
 
 **Home URL: (get request):** https://expense-tracer-production.up.railway.app/api/
 
-**USER APIs**
+## USER APIs
 **For creation of User:** (post request) https://expense-tracer-production.up.railway.app/api/users/create
 JSON Used:{
 "email":"akshayanand",
@@ -55,7 +55,7 @@ No JSON Used
 
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-**Expenses APIs**
+## Expenses APIs
 
 **For Addition of Expense Url:**(post request) https://expense-tracer-production.up.railway.app/api/expenses/add
 JSON Used:{
