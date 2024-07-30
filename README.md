@@ -12,7 +12,7 @@ including checking that percentage splits sum to 100%. The backend is built with
 
 I have deployed my backend on railway server, now you don't have to setup github repository for viewing the project
 
-**Home URL: (get request):** https://expense-tracer-production.up.railway.app/api/
+**Home URL: (get request):** https://expense-tracer-production.up.railway.app/
 
 ## USER APIs
 **For creation of User:** (post request) https://expense-tracer-production.up.railway.app/api/users/create
